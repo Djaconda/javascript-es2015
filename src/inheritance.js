@@ -5,19 +5,19 @@ class Task {
         Task.count += 1;
         console.log('Создание задачи');
     }
-    
+
     get title() {
         return this._title;
     }
-    
+
     set title(value) {
         this._title = value;
     }
-    
+
     static getDefaultTitle() {
         return 'Задача';
     }
-    
+
     complete() {
         this.done = true;
         console.log(`Задача "${this.title}" выполнена`);
@@ -32,7 +32,7 @@ class SubTask extends Task {
         this.parent = parent;
         console.log('Создание подзадачи');
     }
-    
+
     complete() {
         super.complete();
         console.log(`Подзадача "${this.title}" выполнена`);
@@ -40,7 +40,7 @@ class SubTask extends Task {
 }
 
 // let Task = class {
-    
+
 // }
 
 // let SubTask = class extends Task {

@@ -1,7 +1,7 @@
 let firstName = 'Bill',
     lastName = 'Gates',
     email = 'billgates@microsoft.com';
-    
+
 let person = {
     firstName,
     lastName,

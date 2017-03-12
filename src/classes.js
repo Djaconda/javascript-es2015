@@ -5,11 +5,11 @@ class Task {
         Task.count += 1;
         console.log('Создание задачи');
     }
-    
+
     get done() {
         return this._done === true ? 'Выполнена' : 'Не выполнена';
     }
-    
+
     set done(value) {
         if (value !== undefined && typeof value === 'boolean') {
             this._done = value;
@@ -17,12 +17,12 @@ class Task {
             console.error('Ошибка! Укажите значение true или false');
         }
     }
-    
+
     complete() {
         this.done = 1;
         console.log(`Задача "${this.title}" выполнена`);
     }
-    
+
     static getDefaultTitle() {
         return 'Задача';
     }

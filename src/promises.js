@@ -20,11 +20,11 @@ function getData(url) {
                 reject(xhr.statusText);
             }
         };
-        
+
         xhr.onerror = function(error) {
             reject(error);
         };
-        
+
         xhr.send();
     });
 }
@@ -37,7 +37,7 @@ let superman = getData('http://www.omdbapi.com/?s=superman');
 //         movies.forEach(movie =>
 //             addMovieToList(movie)))
 //     .catch(error => console.error(error));
-    
+
 // superman
 //     .then(movies =>
 //         movies.forEach(movie =>

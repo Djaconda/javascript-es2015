@@ -7,11 +7,11 @@ greet('Bill');
 
 function createEmail(to, from, subject, message) {
     console.log(`
-        To: ${to}
-        From: ${from}
-        Subject: ${subject}
-        Message: ${message}
-    `);
+		To: ${to}
+		From: ${from}
+		Subject: ${subject}
+		Message: ${message}
+	`);
 }
 
 createEmail('john@mail.com', 'jane@mail.com', 'Hello', 'How are you doing?');

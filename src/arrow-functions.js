@@ -11,19 +11,18 @@ let multiply = (x, y) => {
     return result;
 };
 
-let getPerson = () => ({ name: 'John' });
+let getPerson = () => ({name: 'John'});
 
 //(() => console.log('IIFE'))();
 
 
-let numbers = [1, 2, 3 ,4 , 5, 6, 7 ,8 ,9 ,10];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 let sum = 0;
 
 numbers.forEach(num => sum += num);
 
 let squared = numbers.map(n => n * n);
-
 
 
 let person = {
